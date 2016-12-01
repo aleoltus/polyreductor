@@ -92,7 +92,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies />
+      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;glew32.lib;glew32s.lib;glew32mx.lib;glew32mxs.lib;OpenGL32.lib;assimp-vc130-mtd.lib;opencv_videostab310d.lib;opencv_stitching310d.lib;opencv_objdetect310d.lib;opencv_calib3d310d.lib;opencv_features2d310d.lib;opencv_highgui310d.lib;opencv_superres310d.lib;opencv_videoio310d.lib;opencv_shape310d.lib;opencv_imgcodecs310d.lib;opencv_photo310d.lib;opencv_video310d.lib;opencv_imgproc310d.lib;opencv_flann310d.lib;opencv_ml310d.lib;opencv_core310d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
@@ -139,9 +139,28 @@
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="FPSTicker.h" />
+    <ClInclude Include="Histograms.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="KeyboardGlfw.h" />
+    <ClInclude Include="MaterialForDrawModel.h" />
+    <ClInclude Include="MaterialsLibary.h" />
+    <ClInclude Include="ModelForReduction.h" />
+    <ClInclude Include="ModelsComparator.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="MouseGlfw.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MyVertex.h" />
+    <ClInclude Include="OpenGLLibaries.h" />
+    <ClInclude Include="ReduceSystem.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShaderGLSL.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WindowGlfw.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
